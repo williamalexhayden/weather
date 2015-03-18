@@ -1,0 +1,16 @@
+body{background: url("../img/china.png");}
+
+article{
+	background: url("../img/china_2.png");
+	max-width: 50%;
+	margin:auto;
+	box-shadow: rgba(0,0,0,0.2) 0px 5px 4px;
+    border-radius: 0px 0px 20px 20px;
+
+	}
+
+h1 { font-family: ‘Montserrat’, sans-serif; font-weight: 700; }
+
+p{ font-family: ‘Montserrat’, sans-serif; font-weight: 400; font-size: 1em;}
+
+div{ font-family: ‘Montserrat’, sans-serif; font-weight: 400; font-size: 1.25em;}
