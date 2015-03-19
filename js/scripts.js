@@ -53,21 +53,33 @@ var year = d.getFullYear();
       unit: 'f',
 
       success: function(weather) {
-        icon = '<h2><i class="icon-'+weather.code+'"></i>';
+        icon = '<h2><i class="icon-'+weather.code+'"></i></h2>';
         html = '<p>'+weather.temp+'&deg;'+weather.units.temp+ " / " +'</p>';
         html = html + '<p>' + weather.currently + '<p>';
         highlow = '<br/>' + 'high: ' +weather.forecast[0].high + ' low: ' +weather.forecast[0].low;
 
         title = '<p>' + weather.city + ", " + weather.region + '<p>';
         
-        tomorrowIcon = '<i class="icon-'+weather.forecast[1].code+'"></i>';
-        tomorrow = "Tomorrow's Weather: "+ weather.forecast[1].text + " " +tomorrowIcon;
-    
+      tomorrowIcon = '<i class="icon-'+weather.forecast[1].code+'"></i>';
+      tomorrow = weather.forecast[1].day + ": " + weather.forecast[1].text + " " +weather.forecast[1].high+'&deg;'+weather.units.temp+ " " +tomorrowIcon;
+
+      twoomorrowIcon = '<i class="icon-'+weather.forecast[2].code+'"></i>';
+      twoomorrow = weather.forecast[2].day + ": " + weather.forecast[2].text + " " +weather.forecast[2].high+'&deg;'+weather.units.temp+ " " +twoomorrowIcon;
+
+      threeomorrowIcon = '<i class="icon-'+weather.forecast[3].code+'"></i>';
+      threeomorrow = weather.forecast[3].day + ": " + weather.forecast[3].text + " " +weather.forecast[3].high+'&deg;'+weather.units.temp+ " " +threeomorrowIcon;
+
+      fouromorrowIcon = '<i class="icon-'+weather.forecast[4].code+'"></i>';
+      fouromorrow = weather.forecast[4].day + ": " + weather.forecast[4].text + " " +weather.forecast[4].high+'&deg;'+weather.units.temp+ " " +fouromorrowIcon;
+
       $('#weather').html(html);
       $('i').html(icon);
       $('.HighLow').html(highlow);
       $("h1").html(title);
       $('.tomorrow').html(tomorrow);
+      $('.twoomorrow').html(twoomorrow);
+      $('.threeomorrow').html(threeomorrow);
+      $('.fouromorrow').html(fouromorrow);
       },
       error: function(error) {
         $(".weather").html('<p>'+error+'</p>');
@@ -94,7 +106,16 @@ var year = d.getFullYear();
       console.log(weather.forecast[1].text);
       
       tomorrowIcon = '<i class="icon-'+weather.forecast[1].code+'"></i>';
-      tomorrow = "Tomorrow's Weather: "+ weather.forecast[1].text + " " +tomorrowIcon;
+      tomorrow = weather.forecast[1].day + ": " + weather.forecast[1].text + " " +weather.forecast[1].high+'&deg;'+weather.units.temp+ " " +tomorrowIcon;
+
+      twoomorrowIcon = '<i class="icon-'+weather.forecast[2].code+'"></i>';
+      twoomorrow = weather.forecast[2].day + ": " + weather.forecast[2].text + " " +weather.forecast[2].high+'&deg;'+weather.units.temp+ " " +twoomorrowIcon;
+
+      threeomorrowIcon = '<i class="icon-'+weather.forecast[3].code+'"></i>';
+      threeomorrow = weather.forecast[3].day + ": " + weather.forecast[3].text + " " +weather.forecast[3].high+'&deg;'+weather.units.temp+ " " +threeomorrowIcon;
+
+      fouromorrowIcon = '<i class="icon-'+weather.forecast[4].code+'"></i>';
+      fouromorrow = weather.forecast[4].day + ": " + weather.forecast[4].text + " " +weather.forecast[4].high+'&deg;'+weather.units.temp+ " " +fouromorrowIcon;
 
       console.log(weather);
 
@@ -103,6 +124,9 @@ var year = d.getFullYear();
       $('.HighLow').html(highlow);
       $("h1").html(title);
       $('.tomorrow').html(tomorrow);
+      $('.twoomorrow').html(twoomorrow);
+      $('.threeomorrow').html(threeomorrow);
+      $('.fouromorrow').html(fouromorrow);
     },
     error: function(error) {
       $("#weather").html('<p>'+error+'</p>');
