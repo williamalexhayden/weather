@@ -16,7 +16,7 @@ article{
 	background: url("../img/china_2.png");
 	max-width: 50%;
 	margin-left:25%;
-	margin-top: 50px;
+/*	margin-top: 20px;*/
 	box-shadow: rgba(0,0,0,0.2) 0px 5px 4px;
     border-radius: 0px 0px 20px 20px;
     padding: 1em;
@@ -117,7 +117,7 @@ i {
   font-size: 150px;
   font-weight: normal;
   font-style: normal;
-  line-height: .5;
+  line-height: 1;
 }
 
 
@@ -183,19 +183,30 @@ div>i
   text-align: center;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
 }
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
+	input#getWeather{
+		width: 90%;
+	}
+	button.button{
+		width: 90%;
+	}
+}
+@media screen and (max-width: 634px) {
 	article{
 	max-width: 90%;
 	margin-left:5%;
-	margin-top: 20px;
+	}
+	input#getWeather{
+		width: 90%;
+	}
+	button.button{
+		width: 90%;
 	}
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 635px) {
 	article{
 	max-width: 70%;
 	margin-left:15%;
-	margin-top: 50px;
 	}
 	.fourday{
 		font-size: 1em;
@@ -211,7 +222,15 @@ div>i
 }
 @media screen and (min-width: 1115px) {
 	.fourday{
-		width: 24%;
+		width: 24.5%;
 		font-size: .8em;
 	}
+	.twoomorrow{
+		border-left: solid 1px #888;
+		border-right: solid 1px #888;
+	}
+	.threeomorrow{
+		border-right: solid 1px #888;
+	}
+}
 }

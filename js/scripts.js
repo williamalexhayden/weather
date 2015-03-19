@@ -132,8 +132,8 @@ var year = d.getFullYear();
       $("#weather").html('<p>'+error+'</p>');
     }
 
-  });//End Simple Weather
 
+  });//End Simple Weather
 
 
 
