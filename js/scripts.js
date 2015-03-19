@@ -4,13 +4,13 @@
 // begin document.ready(function)
  $(document).ready(function(){
 
-var d =new Date();
+var d = new Date();
   console.log(d);
 var hour = d.getHours();
   console.log(hour);
 var minutes = d.getMinutes();
   console.log(minutes);
-var month = d.getMonth();
+var month = d.getMonth()+1;
   console.log(month);
 var day = d.getDate();
   console.log(day);
