@@ -33,9 +33,10 @@ h3{
 	border-bottom: 2px solid #888;
 }
 .fourday{
-	width: 24%;
+	width: 49%;
 	display:inline-block;
 	font-size: .75em;
+	padding: 1%;
 }
 #weather>p{
 
@@ -76,11 +77,6 @@ h2{
 }
 
 .weather{
-	text-align:right;
-	margin-bottom:1em;
-}
-
-.tomorrow{
 	text-align:right;
 	margin-bottom:1em;
 }
@@ -201,11 +197,21 @@ div>i
 	margin-left:15%;
 	margin-top: 50px;
 	}
+	.fourday{
+		font-size: 1em;
+		width: 49%;
+	}
+}
 }
 @media screen and (min-width: 900px) {
-	article{
-	max-width: 50%;
-	margin-left:25%;
-	margin-top: 50px;
+	.fourday{
+		width: 49%;
+		font-size: .8em;
+	}
+}
+@media screen and (min-width: 1115px) {
+	.fourday{
+		width: 24%;
+		font-size: .8em;
 	}
 }
