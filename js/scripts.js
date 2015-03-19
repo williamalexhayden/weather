@@ -54,7 +54,7 @@ var year = d.getFullYear();
 
       success: function(weather) {
         icon = '<h2><i class="icon-'+weather.code+'"></i>';
-        html = '<p>'+weather.temp+'&deg;'+weather.units.temp+'</p>';
+        html = '<p>'+weather.temp+'&deg;'+weather.units.temp+ " / " +'</p>';
         html = html + '<p>' + weather.currently + '<p>';
         highlow = '<br/>' + 'high: ' +weather.forecast[0].high + ' low: ' +weather.forecast[0].low;
 
@@ -63,14 +63,14 @@ var year = d.getFullYear();
         tomorrowIcon = '<i class="icon-'+weather.forecast[1].code+'"></i>';
         tomorrow = "Tomorrow's Weather: "+ weather.forecast[1].text + " " +tomorrowIcon;
     
-      $(".weather").html(html);
-      $('.icon').html(icon);
+      $('#weather').html(html);
+      $('i').html(icon);
       $('.HighLow').html(highlow);
-      $('#location').html(title);
+      $("h1").html(title);
       $('.tomorrow').html(tomorrow);
       },
       error: function(error) {
-        $("#weather").html('<p>'+error+'</p>');
+        $(".weather").html('<p>'+error+'</p>');
       }
     //END simpleWeather 
     });
@@ -86,7 +86,7 @@ var year = d.getFullYear();
 
     success: function(weather) {
       icon = '<h2><i class="icon-'+weather.code+'"></i>';
-      html = '<p>'+weather.temp+'&deg;'+weather.units.temp+'</p>';
+      html = '<p>'+weather.temp+'&deg;'+weather.units.temp+ " / " +'</p>';
       html = html + '<p>' + weather.currently + '<p>';
 
       title = '<p>' + weather.city + ", " + weather.region + '<p>';
@@ -98,10 +98,10 @@ var year = d.getFullYear();
 
       console.log(weather);
 
-      $(".weather").html(html);
-      $('.icon').html(icon);
+      $('#weather').html(html);
+      $('i').html(icon);
       $('.HighLow').html(highlow);
-      $('#location').html(title);
+      $("h1").html(title);
       $('.tomorrow').html(tomorrow);
     },
     error: function(error) {
@@ -110,8 +110,6 @@ var year = d.getFullYear();
 
   });//End Simple Weather
 
-
-  $('h1').text($.simpleWeather.location + "'s Weather")
 
 
 
