@@ -61,16 +61,16 @@ var year = d.getFullYear();
         title = '<p>' + weather.city + ", " + weather.region + '<p>';
         
       tomorrowIcon = '<i class="icon-'+weather.forecast[1].code+'"></i>';
-      tomorrow = weather.forecast[1].day + ": " + weather.forecast[1].text + " " +weather.forecast[1].high+'&deg;'+weather.units.temp+ " " +tomorrowIcon;
+      tomorrow = weather.forecast[1].day + ": " + weather.forecast[1].text + '<br/>' +weather.forecast[1].high+'&deg;'+weather.units.temp+ " " +tomorrowIcon;
 
       twoomorrowIcon = '<i class="icon-'+weather.forecast[2].code+'"></i>';
-      twoomorrow = weather.forecast[2].day + ": " + weather.forecast[2].text + " " +weather.forecast[2].high+'&deg;'+weather.units.temp+ " " +twoomorrowIcon;
+      twoomorrow = weather.forecast[2].day + ": " + weather.forecast[2].text + '<br/>' +weather.forecast[2].high+'&deg;'+weather.units.temp+ " " +twoomorrowIcon;
 
       threeomorrowIcon = '<i class="icon-'+weather.forecast[3].code+'"></i>';
-      threeomorrow = weather.forecast[3].day + ": " + weather.forecast[3].text + " " +weather.forecast[3].high+'&deg;'+weather.units.temp+ " " +threeomorrowIcon;
+      threeomorrow = weather.forecast[3].day + ": " + weather.forecast[3].text + '<br/>' +weather.forecast[3].high+'&deg;'+weather.units.temp+ " " +threeomorrowIcon;
 
       fouromorrowIcon = '<i class="icon-'+weather.forecast[4].code+'"></i>';
-      fouromorrow = weather.forecast[4].day + ": " + weather.forecast[4].text + " " +weather.forecast[4].high+'&deg;'+weather.units.temp+ " " +fouromorrowIcon;
+      fouromorrow = weather.forecast[4].day + ": " + weather.forecast[4].text + '<br/>' +weather.forecast[4].high+'&deg;'+weather.units.temp+ " " +fouromorrowIcon;
 
       $('#weather').html(html);
       $('i').html(icon);
@@ -106,16 +106,16 @@ var year = d.getFullYear();
       console.log(weather.forecast[1].text);
       
       tomorrowIcon = '<i class="icon-'+weather.forecast[1].code+'"></i>';
-      tomorrow = weather.forecast[1].day + ": " + weather.forecast[1].text + " " +weather.forecast[1].high+'&deg;'+weather.units.temp+ " " +tomorrowIcon;
+      tomorrow = weather.forecast[1].day + ": " + weather.forecast[1].text + '<br/>' +weather.forecast[1].high+'&deg;'+weather.units.temp+ " " +tomorrowIcon;
 
       twoomorrowIcon = '<i class="icon-'+weather.forecast[2].code+'"></i>';
-      twoomorrow = weather.forecast[2].day + ": " + weather.forecast[2].text + " " +weather.forecast[2].high+'&deg;'+weather.units.temp+ " " +twoomorrowIcon;
+      twoomorrow = weather.forecast[2].day + ": " + weather.forecast[2].text + '<br/>' +weather.forecast[2].high+'&deg;'+weather.units.temp+ " " +twoomorrowIcon;
 
       threeomorrowIcon = '<i class="icon-'+weather.forecast[3].code+'"></i>';
-      threeomorrow = weather.forecast[3].day + ": " + weather.forecast[3].text + " " +weather.forecast[3].high+'&deg;'+weather.units.temp+ " " +threeomorrowIcon;
+      threeomorrow = weather.forecast[3].day + ": " + weather.forecast[3].text + '<br/>' +weather.forecast[3].high+'&deg;'+weather.units.temp+ " " +threeomorrowIcon;
 
       fouromorrowIcon = '<i class="icon-'+weather.forecast[4].code+'"></i>';
-      fouromorrow = weather.forecast[4].day + ": " + weather.forecast[4].text + " " +weather.forecast[4].high+'&deg;'+weather.units.temp+ " " +fouromorrowIcon;
+      fouromorrow = weather.forecast[4].day + ": " + weather.forecast[4].text + '<br/>' +weather.forecast[4].high+'&deg;'+weather.units.temp+ " " +fouromorrowIcon;
 
       console.log(weather);
 

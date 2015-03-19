@@ -32,6 +32,11 @@ h3{
 	border-top: 2px solid #888;
 	border-bottom: 2px solid #888;
 }
+.fourday{
+	width: 24%;
+	display:inline-block;
+	font-size: .75em;
+}
 #weather>p{
 
 	display: inline;
