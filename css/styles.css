@@ -15,22 +15,42 @@ p{ font-family: ‘Montserrat’, sans-serif; font-weight: 400; font-size: 1em;}
 
 div{ font-family: ‘Montserrat’, sans-serif; font-weight: 400; font-size: 1.25em;}
 
-.app{}
+.app{
+	text-align: center;
+}
 
-.appDay{}
+.appDay{
+	text-align: center;
+}
 
-.appNight{}
+.appNight{
+	text-align: center;
+}
 
-.button{}
+.button{
+	text-align: center;
+}
 
-.HighLow{}
+.HighLow{
+	text-align: center;
+}
 
-.weather{}
+.weather{
+	text-align: center;
+}
 
-.tomorow{}
+.tomorow{
+	text-align: center;
+}
 
-.TimeAndDate{}
+.TimeAndDate{
+	text-align: center;
+}
 
-.date{}
+.date{
+	text-align: center;
+}
 
-.time{}
+.time{
+	text-align: center;
+}
