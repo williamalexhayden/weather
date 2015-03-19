@@ -1,7 +1,25 @@
 // REF: http://foundation.zurb.com/docs/
 // REF: http://simpleweatherjs.com/
-var cheney = '99004';
-  // 2. _simpleWeather()_ object
+
+ 
+
+var d =new Date();
+  console.log(d);
+var hour = d.getHours();
+  console.log(hour);
+var minutes = d.getMinutes();
+  console.log(minutes);
+var month = d.getMonth();
+  console.log(month);
+var day = d.getDate();
+  console.log(day);
+var year = d.getFullYear(); 
+  console.log(year);
+
+
+
+
+ // 2. _simpleWeather()_ object
   $.simpleWeather({
     
     location: '99004', // change zip
@@ -10,28 +28,22 @@ var cheney = '99004';
     // Get _weather_ object
     success: function(weather) {
       
-      //YO PROJECT YO!
-
-
-
-
-
-      // // Get & store temperature
-      // var temp = weather.temp;
-      // // Get & store city
-      // var city = weather.city;
-      // //Get and store state
-      // var state = weather.region;
-      // console.log(state);
-      // var thumb = weather.thumbnail;
-      // console.log(thumb);
-      // // Output to hooks in HTML
-      // $('.temp').text(temp);
-      // $('.city').text(city);
-      // $('.state').text(state);
-      // $('.thumb img').attr('src', thumb);
-      // //attribute
-      // // See console for _weather_ object
+      // Get & store temperature
+      var temp = weather.temp;
+      // Get & store city
+      var city = weather.city;
+      //Get and store state
+      var state = weather.region;
+      console.log(state);
+      var thumb = weather.thumbnail;
+      console.log(thumb);
+      // Output to hooks in HTML
+      $('.temp').text(temp);
+      $('.city').text(city);
+      $('.state').text(state);
+      $('.thumb img').attr('src', thumb);
+      //attribute
+      // See console for _weather_ object
       console.log(weather);
     },
   
@@ -41,5 +53,3 @@ var cheney = '99004';
     }
   
   });
-
-
