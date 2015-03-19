@@ -4,6 +4,15 @@
 // begin document.ready(function)
  $(document).ready(function(){
 
+
+
+
+
+
+
+
+
+
 var d = new Date();
   console.log(d);
 var hour = d.getHours();
@@ -133,4 +142,31 @@ var year = d.getFullYear();
     }
   });//End Simple Weather
 
+// Twitter Bootstrap JS - bootstrap.min.js
+// 0. Store new quotes in variables
+var msg0 = 'IT\'S SOOO DAMN HOT!!!! MILK WAS A BAD CHOICE!';
+var msg1 = 'I love scotch. Scotchy, scotch, scotch. Here it goes down, down into my belly...';
+var msg2 = 'Look, the most glorious rainbow ever.';
+var msg3 = 'What? You pooped in the refrigerator? And you ate the whole... wheel of cheese? How\'d you do that? Heck, I\'m not even mad; that\'s amazing.';
+var msg4 = 'How \'bout we get you in your p.j.\'s and we hit the hay.';
+
+// 1. Show any heading
+
+// 2. Get random number
+// returns 0 to 'limit'
+var limit = 3;
+var numRand = Math.floor(Math.random()*limit);
+
+$('#randomQuote').text( "\"" +  eval('msg' + numRand) + "\"");
+
+console.log( eval('msg' + numRand)  );
+
+// 3. if random number 0, show message 1, etc. 
+
 });
+
+
+// "IT'S SOOO DAMN HOT!!!! . . . MILK WAS A BAD CHOICE!"
+// "I love scotch. Scotchy, scotch, scotch. Here it goes down, down into my belly... "
+// "Look, the most glorious rainbow ever."
+// "What? You pooped in the refrigerator? And you ate the whole... wheel of cheese? How'd you do that? Heck, I\'m not even mad; that's amazing. \"How \'bout we get you in your p.j.\'s and we hit the hay."
