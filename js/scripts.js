@@ -147,14 +147,13 @@ var year = d.getFullYear();
 var msg0 = 'IT\'S SOOO DAMN HOT!!!! MILK WAS A BAD CHOICE!';
 var msg1 = 'I love scotch. Scotchy, scotch, scotch. Here it goes down, down into my belly...';
 var msg2 = 'Look, the most glorious rainbow ever.';
-var msg3 = 'What? You pooped in the refrigerator? And you ate the whole... wheel of cheese? How\'d you do that? Heck, I\'m not even mad; that\'s amazing.';
-var msg4 = 'How \'bout we get you in your p.j.\'s and we hit the hay.';
+var msg3 = 'How \'bout we get you in your p.j.\'s and we hit the hay.';
 
 // 1. Show any heading
 
 // 2. Get random number
 // returns 0 to 'limit'
-var limit = 3;
+var limit = 4;
 var numRand = Math.floor(Math.random()*limit);
 
 $('#randomQuote').text( "\"" +  eval('msg' + numRand) + "\"");

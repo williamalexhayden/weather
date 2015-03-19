@@ -26,7 +26,7 @@ article{
 h3 { font-family: ‘Montserrat’, sans-serif; font-weight: 700; font-size: 2.5em; }
 p{ font-family: ‘Montserrat’, sans-serif; font-weight: 400; font-size: 1em;}
 div{ font-family: ‘Montserrat’, sans-serif; font-weight: 400; font-size: 1.25em;}
-
+p#randomQuote{font-family: 'Shadows Into Light', cursive;}
 h3{
 	text-align:center;
 	border-top: 2px solid #888;
@@ -54,15 +54,15 @@ h2{
 }
 
 #randomQuote{
-	background: 255,0,0 .5;
-	border-radius: 5px;
+/*	background-color:  rgba(255, 255, 255, 0.5);*/
+	padding-right: 25px;
+	border-radius: 0px 0px 0px 25px;
 	float: left;
 	text-align: left;
-	margin-top: 20px;
+	margin-top: 9px;
     margin-bottom: 20px;
     font-size: 1.5em;
     display: inline-block;
-    width: 50%;
     animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
@@ -241,6 +241,7 @@ div>i
   text-align: center;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
 }
+
 @media screen and (max-width: 500px) {
 	input#getWeather{
 		width: 90%;
@@ -248,9 +249,22 @@ div>i
 	button.button{
 		width: 90%;
 	}
+	.randomQuote{
+		width: 60%;
+	}
 	.quote{
 		text-align: center;
 	}
+	.tomorrow{
+		border-right: solid 1px #888; 
+	}
+	.threeomorrow{
+		border-right: solid 1px #888;
+	}
+	h1>p{
+		font-size: .7em;
+	}
+
 }
 @media screen and (max-width: 634px) {
 	article{
@@ -266,6 +280,16 @@ div>i
 	.quote{
 		text-align: center;
 	}
+	.tomorrow{
+		border-right: solid 1px #888; 
+	}
+	.threeomorrow{
+		border-right: solid 1px #888;
+	}
+	p#randomQuote{
+		width: 60%;
+		font-size: 1.5em;
+	}
 }
 @media screen and (min-width: 635px) {
 	article{
@@ -279,12 +303,29 @@ div>i
 	.quote{
 		text-align: right;
 	}
+	.tomorrow{
+		border-right: solid 1px #888; 
+	}
+	.threeomorrow{
+		border-right: solid 1px #888;
+	}
+	p#randomQuote{
+		width:70%;
+		font-size: 3em;
+	}
 }
 }
 @media screen and (min-width: 900px) {
 	.fourday{
 		width: 49%;
 		font-size: .8em;
+	}
+	.tomorrow.fourday{
+		border:none; 
+	}
+	p#randomQuote{
+		width:70%;
+		font-size: 3em;
 	}
 }
 @media screen and (min-width: 1115px) {
@@ -293,11 +334,14 @@ div>i
 		font-size: .8em;
 	}
 	.twoomorrow{
-		border-left: solid 1px #888;
 		border-right: solid 1px #888;
 	}
 	.threeomorrow{
 		border-right: solid 1px #888;
+	}
+		p#randomQuote{
+		width:80%;
+		font-size: 4em;
 	}
 }
 }
