@@ -47,7 +47,7 @@ var year = d.getFullYear();
 
 
 // input zip box
-  var zipCode = '99004';
+  var zipCode = '92093';
 
 
 // on click weather gathered
